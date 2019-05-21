@@ -155,19 +155,14 @@ public class Welcome {
        update.setOnAction(new EventHandler<ActionEvent>(){
             @Override
             public void handle(ActionEvent event){
-              a = UserTextField.getText();
-                b = UserTextField2.getText();
-                c = UserTextField3.getText();
-                d = UserTextField4.getText();
-                e = UserTextField5.getText();
-                f = UserTextField6.getText();
-              
-                h = UserTextField8.getText();  
-                i = UserTextField9.getText();  
-                  
-                
-           
-                Welcome wc = new Welcome(a,b,c,d,e,f,h,i);
+             UserTextField.setDisable(true);
+              UserTextField2.setDisable(true);
+              UserTextField3.setDisable(true);
+              UserTextField4.setDisable(true);
+              UserTextField5.setDisable(true);
+              UserTextField6.setDisable(true);
+              UserTextField9.setDisable(true);
+              UserTextField8.setDisable(true);
             }
         });
        
@@ -186,9 +181,11 @@ private boolean isInt(TextField nim, String nomer){
         try{
             int siswa = Integer.parseInt(nim.getText());
             JOptionPane.showMessageDialog(null,"Welcome "+siswa);
+            System.out.println("Welcome To Our DoomsDay "+siswa);
             return true;    
         }catch(NumberFormatException e){
            JOptionPane.showMessageDialog(null,"Error: "+nomer+" is not a number");
+            System.out.println("Error: "+nomer+" is not a number");
             return false;
         }
         
