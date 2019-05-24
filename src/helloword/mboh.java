@@ -92,9 +92,9 @@ public class mboh {
         
         
         Label hobi = new Label("hobi:");
-        gridBaru.add(hobi, 5, 3);
+        gridBaru.add(hobi, 4, 3);
         TextField UserTextField8 = new TextField();
-        gridBaru.add(UserTextField8, 5, 4);   
+        gridBaru.add(UserTextField8, 5, 3);   
         UserTextField8.setDisable(true);
         
         Button btn = new Button("Sign in");

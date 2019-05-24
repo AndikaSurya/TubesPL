@@ -26,7 +26,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.HBox;
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane; 
 
 public class Welcome {
     String a;
@@ -126,7 +126,7 @@ public class Welcome {
             public void handle(ActionEvent event){
               System.exit(0);
             }
-        });
+    } );
         
          Button edit = new Button("EDIT");
         HBox size4 = new HBox(10);
@@ -170,7 +170,7 @@ public class Welcome {
        HBox sizeL = new HBox(10);
        sizeL.setAlignment(Pos.BASELINE_RIGHT);
        sizeL.getChildren().add(confirm);
-       gridBaru.add(sizeL, 0, 7);
+       gridBaru.add(sizeL, 0, 7);   
        confirm.setOnAction( e -> isInt(UserTextField, UserTextField.getText()));
        
       
@@ -185,7 +185,7 @@ private boolean isInt(TextField nim, String nomer){
             return true;    
         }catch(NumberFormatException e){
            JOptionPane.showMessageDialog(null,"Error: "+nomer+" is not a number");
-            System.out.println("Error: "+nomer+" is not a number");
+                
             return false;
         }
         

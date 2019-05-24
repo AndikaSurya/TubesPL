@@ -52,7 +52,7 @@ public class HelloWord extends Application {
         Scene scene = new Scene(grid, 550, 300);
         primaryStage.setScene(scene);
         
-        Text scenetitle = new Text("Sign In");
+        Text scenetitle = new Text("Sign UP");
         scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         grid.add(scenetitle, 0, 0, 2, 1);
         
